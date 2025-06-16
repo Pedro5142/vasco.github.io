@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Cadastro Fan-club</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="imagens\iconevasco.png">
+
+</head>
+<body>
+
+	<div class="titulo">
+		<img class="vascoemb"src= "imagens\vasco.jpg" alt= "image" height="40px">
+		<h1 class="gigante">Cadastro</h1>
+		<img class="vascoemb"src= "imagens\vasco.jpg" alt= "image" height="40px">
+	</div>
+
+	<h3><a href="index.html">Voltar</a></h3>
+
+    <br>
+
+    <p>Utilize ALT + número para navegar pelos campos</p>
+
+    <br><br>
+
+	<form>
+		<label for="nome">Nome: </label> <br>
+		<input type="text" name="nome" id="nome" placeholder="Nome" maxlength="35" size="40" accesskey="1">
+		
+		<br>
+		<br>
+
+		<label for="idade">Idade: </label> <br>
+		<input type="number" name="idade" id="idade" placeholder="Idade" min="1" max="150" size="4" accesskey="2">
+		
+		<br>
+		<br>
+
+		<label for="sexo">Sexo: </label> <br>
+		<input type="radio" name="sexo" id="sexo" accesskey="3"> M
+		<input type="radio" name="sexo" id="sexo" accesskey="4"> F
+		
+		<br>
+		<br>
+
+		<label for="nome">O quanto você ama o vasco: </label> <br>
+		<input type="range" name="nome" id="nome" accesskey="5">
+		
+		<br>
+		<br>
+
+		<label for="jogadores">Qual o seu jogador favorito da melhor época do Vasco?</label><br>
+		<select id="jogadores" name="jogadores" accesskey="6">
+			<option>Carlos Germano</option>
+			<option>Vágner</option>
+			<option>Odvan</option>
+			<option>Mauro Galvão</option>
+			<option>Luisinho</option>
+			<option>Felipe</option>
+			<option>Nasa (Vítor)</option>
+			<option>Juninho Pernambucano (Válber)</option>
+			<option>Pedrinho (Alex);</option>
+			<option>Luizão</option>
+			<option>Leandro Donizete</option>
+		</select>
+
+		<br>
+		<br>
+
+		<br>
+		<br>
+
+		<input type="submit" name="botao" id="botao" value="Cadastrar" accesskey="7">
+	</form>
+
+</body>
+</html>

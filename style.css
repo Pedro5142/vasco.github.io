@@ -1,0 +1,57 @@
+body {
+  background-color: black;
+  text-align: justify;
+  color: white;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #f42a2a;
+}
+
+a {
+  color: #f42a2a;
+  text-decoration: none;
+}
+
+hr{
+  border: 1px solid #f42a2a;
+}
+
+mark{
+    color: white;
+    background: #f42a2a;
+}
+
+.titulo {
+  justify-content: center;
+  display: flex;
+}
+
+.centro {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vascoemb {
+  padding-top: 20px;
+}
+
+.gigante {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+}
+
+#pequeno {
+    font-size: 8px;
+}
+
+#menu {
+  color: #f42a2a;
+}
+
+input[type='range'] { 
+    accent-color: #f42a2a;
+}
