@@ -259,10 +259,11 @@
 	    </table>
 	</div>
 
-	<figure>
-	<img srcset="imagens\romario.jpg 800w, imagens\romario2.jpg 1199w" sizes="(width <=768) 800w, 1199w" alt="Romário">
-	<p>Por que o meu teclado escreve <span id="mengao">Flamengo</span> assim?</p>
-	</figure>
+	<picture>
+		<source srcset="imagens\romario2.jpg" media="(min-width: 1024px)" >
+		<img srcset="imagens\romario.jpg" alt="Romário">
+		<p>Por que o meu teclado escreve <span id="mengao">Flamengo</span> assim?</p>
+	</picture>
 
 </body>
 </html>
