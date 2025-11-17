@@ -1,57 +1,143 @@
-body {
-  background-color: black;
-  text-align: justify;
-  color: white;
+body{
+    margin: 0;
+    background-color: #0a0a0a;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
 }
 
-h1, h2 {
-  text-align: center;
-  color: #f42a2a;
+.cabecalho{
+    background-color: #151515;
+    width: 100%;
 }
 
-a {
-  color: #f42a2a;
-  text-decoration: none;
+.gigante{
+    animation-name: animacao;
+    animation-duration: 1.5s;
 }
 
-hr{
-  border: 1px solid #f42a2a;
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    padding-bottom: 1rem; 
+}
+
+.menu a{
+    font-size: 1.15rem;
+    color: #d92626;
+    text-decoration: none;
+    
+    border: 2px solid transparent;
+    padding: 4px;
+}
+
+.menu a:hover{
+    border: 2px solid;
+    border-color: #d92626;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 2.75rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
 }
 
 mark{
+    background-color: #d92626;
     color: white;
-    background: #f42a2a;
 }
 
-.titulo {
-  justify-content: center;
-  display: flex;
+li{
+    list-style-image: url(imagens/iconevasco.png);
+    padding: 0.5rem;
 }
 
-.centro {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+table{
+    border-collapse: collapse;
+    border: none;
 }
 
-.vascoemb {
-  padding-top: 20px;
+th{
+    background-color: #d92626;
+    height: 50px;
+    border: none;
+    
+    padding: 8px;
 }
 
-.gigante {
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-bottom: 8px;
+td{
+    padding: 8px;
+    text-align: center;
+    
+    border: none;
+    border-bottom: 1px solid white;
 }
 
-#pequeno {
-    font-size: 8px;
+td.funcao{
+    font-weight: bold;
+    color: #d92626;
 }
 
-#menu {
-  color: #f42a2a;
+img{
+   max-width: 100%; 
 }
 
-input[type='range'] { 
-    accent-color: #f42a2a;
+#hino-div{
+    border: 2px solid #d92626;
+    border-radius: 5px;
+    
+    padding: 2rem;
+    
+    font-style: italic;
+    font-family: "times new roman", serif;
 }
+
+#mengao{
+    font-size: 0.6rem;
+}
+
+@keyframes animacao{
+    from{
+	    letter-spacing: 50px;
+	}
+	
+    to{
+		letter-spacing: normal;
+	}
+}
+
+@media screen and (min-width: 768px) {
+    .menu{
+        flex-direction: row;
+    }
+}
+
+@media print{
+    body{
+        background-color: white;
+        color: black;
+    }
+    .menu{
+        display: none;
+    }
+    img{
+        display: none;
+    }
+}
+
+

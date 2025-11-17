@@ -9,71 +9,133 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/png" href="imagens\iconevasco.png">
 
+    <style>
+        form{
+            background-color: #151515;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            
+            border-radius: 10px;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            gap: 2rem;
+            
+            box-shadow: 0 0 8px lightgray;
+        }
+ 
+        label{
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+ 
+        input:focus{
+            background-color: #d92626;
+            color: white;
+        }
+ 
+        input[type="text"], input[type="email"]{
+            width: 100%;
+            height: 1.5rem;
+            border: none;
+            outline:none;
+            border-radius: 5px;
+        }
+ 
+        input[type="number"]{
+            width: 3rem;
+            height: 2rem;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+        }
+ 
+        input[type="submit"]{
+            margin-top: 4rem;
+            margin-left: auto;
+            margin-right: auto;
+            
+            padding: 12px;
+            
+            width: 25%;
+            height: 10%;
+            
+            border: none;
+            border-radius: 5px;
+            
+            background-color: #d92626;
+            
+            color: white;
+            font-size: 1rem;
+            
+            transition-duration: 0.2s;
+        }
+        
+        input[type="submit"]:hover{
+            cursor: pointer;
+            transition-duration: 0.5s;
+            transform: scale(1.25);
+        }
+    </style>
+
 </head>
 <body>
 
-	<div class="titulo">
-		<img class="vascoemb"src= "imagens\vasco.jpg" alt= "image" height="40px">
+	<div class="cabecalho">
 		<h1 class="gigante">Cadastro</h1>
-		<img class="vascoemb"src= "imagens\vasco.jpg" alt= "image" height="40px">
+		<div class="menu">
+		    <a href="index.html">Voltar</a>
+		</div>
 	</div>
-
-	<h3><a href="index.html">Voltar</a></h3>
-
-    <br>
 
     <p>Utilize ALT + número para navegar pelos campos</p>
 
-    <br><br>
-
 	<form>
-		<label for="nome">Nome: </label> <br>
-		<input type="text" name="nome" id="nome" placeholder="Nome" maxlength="35" size="40" accesskey="1">
+        <div class="form-elemento">	
+		    <label for="nome">Nome: </label> 
+		    <input type="text" name="nome" id="nome" placeholder="Nome" maxlength="35" size="40" accesskey="1" required>
+        </div>
+            
+        <div class="form-elemento">	
+		    <label for="nome">Email: </label> 
+		    <input type="email" name="nome" id="nome" placeholder="nome@email.com" maxlength="35" size="40" accesskey="2" required>
+        </div>
+    
+        <div class="form-elemento">
+		    <label for="idade">Idade: </label> 
+		    <input type="number" name="idade" id="idade" placeholder="18" min="1" max="150" size="4" accesskey="3" required>
+        </div>
+        
+        <div class="form-elemento">
+		    <label for="sexo">Sexo: </label>
+		    <input type="radio" name="sexo" id="sexo" accesskey="4"> M
+		    <input type="radio" name="sexo" id="sexo" accesskey="5"> F
+        </div>
+        
+        <div class="form-elemento">
+		    <label for="nome">O quanto você ama o vasco: </label>
+		    <input type="range" name="nome" id="nome" accesskey="6">
+        </div>
+
+        <div class="form-elemento">
+		    <label for="jogadores">Qual o seu jogador favorito da melhor época do Vasco?</label> <br>
+		    <select id="jogadores" name="jogadores" accesskey="7">
+			    <option>Carlos Germano</option>
+			    <option>Vágner</option>
+			    <option>Odvan</option>
+			    <option>Mauro Galvão</option>
+			    <option>Luisinho</option>
+			    <option>Felipe</option>
+			    <option>Nasa (Vítor)</option>
+			    <option>Juninho Pernambucano (Válber)</option>
+			    <option>Pedrinho (Alex);</option>
+			    <option>Luizão</option>
+			    <option>Leandro Donizete</option>
+		    </select>
+		</div>
 		
-		<br>
-		<br>
-
-		<label for="idade">Idade: </label> <br>
-		<input type="number" name="idade" id="idade" placeholder="Idade" min="1" max="150" size="4" accesskey="2">
-		
-		<br>
-		<br>
-
-		<label for="sexo">Sexo: </label> <br>
-		<input type="radio" name="sexo" id="sexo" accesskey="3"> M
-		<input type="radio" name="sexo" id="sexo" accesskey="4"> F
-		
-		<br>
-		<br>
-
-		<label for="nome">O quanto você ama o vasco: </label> <br>
-		<input type="range" name="nome" id="nome" accesskey="5">
-		
-		<br>
-		<br>
-
-		<label for="jogadores">Qual o seu jogador favorito da melhor época do Vasco?</label><br>
-		<select id="jogadores" name="jogadores" accesskey="6">
-			<option>Carlos Germano</option>
-			<option>Vágner</option>
-			<option>Odvan</option>
-			<option>Mauro Galvão</option>
-			<option>Luisinho</option>
-			<option>Felipe</option>
-			<option>Nasa (Vítor)</option>
-			<option>Juninho Pernambucano (Válber)</option>
-			<option>Pedrinho (Alex);</option>
-			<option>Luizão</option>
-			<option>Leandro Donizete</option>
-		</select>
-
-		<br>
-		<br>
-
-		<br>
-		<br>
-
-		<input type="submit" name="botao" id="botao" value="Cadastrar" accesskey="7">
+		<input type="submit" name="botao" id="botao" value="Cadastrar" accesskey="8">
 	</form>
 
 </body>
